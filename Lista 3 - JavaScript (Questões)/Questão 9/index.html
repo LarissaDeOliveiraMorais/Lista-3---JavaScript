@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> Lista 3 - JavaScript - Questão 9 </title>
+    <script>
+        function Intercalar() {
+            var palavra1 = document.getElementById('nome').value;
+            var palavra2 = document.getElementById('nome2').value;
+            var array = palavra1.split("");
+            var array2 = palavra2.split("");
+            var tamanho = palavra1.length;
+            var mensg= ("");
+            if (tamanho < (palavra2.length)) {
+                tamanho = palavra2.length;
+            }
+            for (var i = 0; i < tamanho; i++) {
+                mensg = (mensg + array[i]);
+                mensg = (mensg + array2[i]);
+            }
+            document.getElementById('resultado').value = mensg;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome2" id="nome2">
+            <br>
+            <input type="button" onclick="Intercalar()" value="Intercalar">
+            <br>
+            <input type="text" disabled name="resultado" id="resultado">
+        </div>
+
+    </main>
+
+</body>
+
+</html>
