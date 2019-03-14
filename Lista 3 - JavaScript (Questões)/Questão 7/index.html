@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lista 3 - JavaScript - Questão 7</title>
+
+</head>
+<body>
+    <main>
+        <form name="lista" onsubmit="Inverter();">
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <input type="submit" value="Inverter">
+        </form>
+    </main>
+
+    <script type="text/javascript">        
+        function Inverter() {
+            var quantidade = nome.length;
+            var teste = quantidade;
+            for (var i = 0; quantidade; i++) {
+                teste = (teste - 1);
+                alert(nome[teste].value);
+            }
+        }
+    </script>
+</body>
+
+</html>
