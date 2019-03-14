@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Lista 3 - JavaScript - Questão 10 </title>
+    <meta charset="utf-8" />
+    <script>
+        function recebe(){
+            var Pnumero= document.getElementById('numero1').value;
+            var Snumero= document.getElementById('numero2').value;
+            var Tnumero= document.getElementById('numero3').value;
+            alert(Pnumero);
+            alert(Snumero);
+            alert(Tnumero);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form onsubmit="recebe();">
+            <input type="number" name="numero1" id="numero1">
+            <br>
+            <input type="number" name="numero2" id="numero2">
+            <br>
+            <input type="number" name="numero3" id="numero3">
+            <br>
+            <input type="submit">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
