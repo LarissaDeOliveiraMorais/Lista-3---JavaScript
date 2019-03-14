@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Lista 3 - JavaScript - Questão 5</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="regraCSS.css">
+    </head>
+    <body>
+        <main>
+                <form  method="post" name="dados" onSubmit="return enviar();" >
+                <label for="login">login: </label>
+                <input type="text" id="login"/><br/>
+                <label for="senha">senha: </label>
+                <input type="password" id="senha"/><br/>
+                <label for="Confirmação">Confirmar senha: </label>
+                <input type="password" id="Confirmacao"/><br/>
+                <input name="Submit" type="submit"  class="formobjects" value="Enviar dados">
+            </form>
+            <script type"text/javascript">
+                function enviar(){
+                    if((document.dados.login.value=="")||(document.dados.senha.value=="")||(document.dados.Confirmacao.value=="")){
+                        alert("Preencha todos os campos");
+                    }else if((document.dados.senha.value)!=(document.dados.Confirmacao.value)){
+                        alert("A senha não é compativel");
+                    }   
+                }            
+            </script>           
+        </main>
+    </body>
+</html>

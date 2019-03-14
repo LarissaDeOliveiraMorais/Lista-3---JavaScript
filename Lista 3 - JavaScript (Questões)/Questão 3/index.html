@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lista 3 - JavaScript - Questão 3 </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<select runat="server" id="select">
+    <option value="A" style="background-color: white;">Branco</option>
+    <option value="B" style="background-color: red;">Vermelho</option>
+    <option value="C" style="background-color: yellow;">Amarelo</option>
+    <option value="D" style="background-color: green;">Verde</option>
+</select>
+<script>
+$('#select').change(function(){
+      if($(this).val() == 'A'){
+        $("body").css('background-color', 'white');
+      }
+        if($(this).val() == 'B'){
+        $("body").css('background-color', 'red');
+      }
+        if($(this).val() == 'C'){
+        $("body").css('background-color', 'yellow');
+      }
+        if($(this).val() == 'D'){
+        $("body").css('background-color', 'green');
+      }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lista 3 - JavaScript - Questão 8 </title>
+</head>
+
+<body>
+	<form  method="post" name="dados" onSubmit="return enviar();" >
+
+	<label for="name" type="text"> Nome </label>
+    <input type="text" name="name">
+    <br><br>
+    <input name="ativo" type="radio" class="form_1" value="S" onclick="
+		if(document.getElementById('titulo').disabled==true){
+			document.getElementById('titulo').disabled=false
+			document.getElementById('titulo2').disabled=true
+			document.getElementById('nascimento').disabled=false
+		}"/>Pessoa Fisica
+
+	<input name="ativo" type="radio" class="form_1" value="N" onclick="
+		if(document.getElementById('titulo').disabled==false){
+			document.getElementById('titulo').disabled=true
+			document.getElementById('titulo2').disabled=false
+			document.getElementById('nascimento').disabled=true
+		}"/ >Pessoa Juridica
+	<br> <br>
+    CPF: <input name="titulo" id="titulo" type="text" disabled="disabled" />
+	<br> <br>
+	CNJP: <input name="titulo2" id="titulo2" type="text" disabled="disabled" /> 	
+	<br><br>
+    <label for="date" type="date"> Data de nascimento </label>
+    <input type="date" name="date" id="nascimento" disabled="disabled">
+    <br><br>
+    <label for="endereço" type="text"> Endereco </label>
+    <input type="text" name="endereço">
+    <br><br>
+    <label for="cep" type="text"> cep </label>
+    <input type="text" name="cep">
+    <br><br>
+    <label for="telefone" type="text"> Telefone </label>
+    <input type="text" name="telefone">
+    <br><br>
+    <label for="email" type="email"> Email </label>
+    <input type="text" name="email">
+    <br><br>
+    <input name="Submit" type="submit"  class="formobjects" value="Enviar dados">
+
+	</form>
+</body>
+</html>

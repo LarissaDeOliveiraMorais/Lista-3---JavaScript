@@ -1,0 +1,37 @@
+<html> 
+<head> 
+
+	<title>Lista 3 - JavaScript - Questão 6</title>
+	<meta charset="utf-8"/>
+</head>
+
+<body> 
+	<script type="text/javascript">
+    // Palavra inserida pelo usuario
+    var palavra = prompt("Digite a palavra para saber se é ou não um Palindromo","aba");
+    // Funcão de comparação
+    function palavraPalindromo(palavra){
+      palavra=palavra.toLowerCase().replace(/\s/g,"");
+      palavraReverse=palavra.split("").reverse().toString();
+
+      for (var i = 0; i < ((palavraReverse.length)-1); i++) {
+        palavraReverse=palavraReverse.replace(",","");
+      };
+   
+      if(palavra==palavraReverse){
+        
+        resultado="é um Palindromo";
+      }
+      else{
+      
+        resultado="não é um Palindromo";
+      }
+      
+      document.write("Sua palavra "+resultado);
+    }
+
+    palavraPalindromo(palavra);
+</script>
+
+</body> 
+</html>
